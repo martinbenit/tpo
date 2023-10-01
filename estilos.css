@@ -19,7 +19,7 @@ a{
     /*flex-flow: column nowrap;*/
 }
     .header {
-        background: url(../img/fondo.jpg);
+        background: url(img/fondo.jpg);
         background-position: center;
         background-size: cover;
         display: flex;
