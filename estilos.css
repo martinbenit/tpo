@@ -17,9 +17,11 @@ a{
     flex-direction: column;
     flex-wrap: nowrap;
     /*flex-flow: column nowrap;*/
+    background: #F2C744;
+    box-shadow: 3px 3px 5px #454545;
 }
     .header {
-        background: url(img/fondo.jpg);
+        background: url(img/TILCARA.jpg);
         background-position: center;
         background-size: cover;
         display: flex;
@@ -28,7 +30,7 @@ a{
         /*flex-flow: column nowrap;*/
     } 
         .menu{
-            background: rgba(0, 0, 0, .20);
+            background: rgba(0, 0, 0, .30);
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -94,48 +96,58 @@ a{
             }
             
     .section{
-        background: #e1ae6c;
+        background:#F2C744;
         display: flex;
+        
     }
         .articulos{
-            background:rgb(203, 202, 171);
+            background:#F2C744;
             flex: 2 1 auto;
             display: flex;
             flex-flow: row wrap;
+            
         }
             .article{
-                color: #900a0a;
+                color: white;
                 font-size: 16px;
                 letter-spacing: 1px;
-                margin: 10px 10px 0px 0px;
-                background:#75bcee;
+                margin: 10px 5px 10px 5px;
+                background:#F2762E;
                 flex: 1 1 40%;
+                border-radius: 15px;
+                box-shadow: 3px 3px 5px #454545;
+                
             }
             .article img{
                 width: 100%;
             }
             .navegacion{
-                background: #e1ae6c;
+                background: ;
                 flex: 1 1 100%;
             }
             .navegacion a{
-                color: white;
+                color: #BF533B;
+                font-weight:450;
+                font-size: 15px;
+                letter-spacing: 0.07px;
+                
             }
             .navegacion a:hover {
-                color: rgb(9, 233, 233);
+                color: white;
             }
 
 
         .aside{
-            background: pink;
+            background: #F2762E;
             flex: 1 1 auto;
+            
         }
             .publicidad{
                 background:lightseagreen;
             }
 
         .cards{
-            background: pink;
+            background: #F2C744;
             flex:2 1 auto;
             display: flex;
             flex-flow: row wrap;
@@ -145,7 +157,7 @@ a{
             display: flex;
             flex-flow: row wrap;
             position: relative;
-            background: rgb(235, 134, 178);
+            background: #F2C744;
             flex: 1 1 40%;
             width: 100%;
             height: auto;
@@ -174,8 +186,8 @@ a{
                 width: 100%;
                 height: 100%;
                 transform: perspective(600px) rotateY(0deg);
-                background: #e1ae6c;
-                border-radius: 30px;
+                background: #F2C744;
+                border-radius: 15px;
               }
               .card:hover .frente{
                 transform: perspective(600px) rotateY(180deg);
@@ -194,8 +206,8 @@ a{
                 transition: 0.5s;
                 transform-style: preserve-3d;    
                 overflow-y: auto;
-                background-color: #e5d8b4;
-                border-radius: 30px;
+                background-color: #f2d98d;
+                border-radius: 15px;
                 color: black;
               }
               .card:hover .atras{
@@ -269,7 +281,7 @@ a{
 
 
     .footer {
-        background: #000;
+        background: #BF533B;
         display: flex;
         justify-content: center;
     }
