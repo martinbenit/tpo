@@ -1,6 +1,6 @@
 *{
     margin:0px;
-    padding: 10px;
+    padding: 3px;
     box-sizing: border-box;
 }
 body{
@@ -17,7 +17,8 @@ a{
     flex-direction: column;
     flex-wrap: nowrap;
     /*flex-flow: column nowrap;*/
-    background: #F2C744;
+    /* background: #F2C744; */
+    background: rgb(242, 217, 141, 0.8);
     box-shadow: 3px 3px 5px #454545;
 }
     .header {
@@ -86,33 +87,36 @@ a{
             display: flex;
             align-items: top;
         }
-            h1 {
-                
+            h1 {                
                 font-size: 35px;
                 color: #ffffff;
                 font-weight:5;
                 text-align: center;
-                line-height: 1.3;
+                line-height: 1.3;                
             }
             
     .section{
-        background:#F2C744;
+        /*background:#F2C744;*/
+        background: rgb(242, 217, 141, 0.8);
         display: flex;
         
     }
+    /*################################# ESTILOS PARA PAGINA DE OPINIONES ###############################*/
         .articulos{
-            background:#F2C744;
+            /* background:#F2C744; */
+            background: rgb(242, 217, 141, 0.8);
             flex: 2 1 auto;
             display: flex;
             flex-flow: row wrap;
             
         }
             .article{
-                color: white;
+                color: rgb(0, 0, 0, 0.8);
                 font-size: 16px;
                 letter-spacing: 1px;
                 margin: 10px 5px 10px 5px;
-                background:#F2762E;
+                /* background:#F2762E; */
+                background: rgb(242, 118, 46, 0.6);
                 flex: 1 1 40%;
                 border-radius: 15px;
                 box-shadow: 3px 3px 5px #454545;
@@ -122,7 +126,6 @@ a{
                 width: 100%;
             }
             .navegacion{
-                background: ;
                 flex: 1 1 100%;
             }
             .navegacion a{
@@ -138,13 +141,15 @@ a{
 
 
         .aside{
-            background: #F2762E;
+            /* background: #F2762E; */
+            background: rgb(242, 118, 46, 0.6);
             flex: 1 1 auto;
             
         }
             .publicidad{
                 background:lightseagreen;
             }
+/*################################# ESTILOS PARA PAGINA DE DESTINOS ###############################*/
 
         .cards{
             background: #F2C744;
@@ -281,7 +286,8 @@ a{
 
 
     .footer {
-        background: #BF533B;
+        /* background: #BF533B; */
+        background: rgb(191, 83, 59, 0.5);
         display: flex;
         justify-content: center;
     }
@@ -289,6 +295,60 @@ a{
             background:limegreen;
             width: 300px;
         }
+
+
+/*################### ESTILOS PARA LA PÁGINA DE CONSULTAS ########################*/
+
+.form-contenedor{
+    background: rgba(0, 0, 0, .10);
+    width: 80%;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.form-contenedor .form{
+    margin: auto;
+}
+
+.form-contenedor .form .form-title{
+    color: #454545;
+    font-weight: 400;
+}
+.form-contenedor .form .form-label, .form-label-date{
+    display: block;
+    color: #454545;
+    font-size: 16px;
+    position: relative;
+    margin: auto;
+}
+
+.form-contenedor .form .form-input ,.form-textarea, .form-date, .form-input-pasajeros{
+    border: 2px solid rgb(242, 118, 46, 0.6);
+    outline: none;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    
+}
+.form-contenedor .form .form-date{
+    display: inline;
+    width: 20%;
+}
+
+.form-contenedor .form .form-input-pasajeros{
+    width: 30%;
+}
+
+.form-contenedor .form .form-label-date{
+    display: inline;
+}
+
+/*################################# ESTILOS PARA DISEÑO RESPONSIVE ###############################*/
 
 /*De 601 a 800px*/
 @media all and (max-width: 800px){
@@ -311,6 +371,13 @@ a{
         display: flex;
         justify-content: center;
     }
+    .form-contenedor .form .form-date{
+        display: block;
+        width: 100%;
+    }    
+    .form-contenedor .form .form-input-pasajeros{
+        width: 100%;
+    }
 }
 
 /*De 401 a 600px*/
@@ -321,6 +388,19 @@ a{
     .cards{
         flex-direction: column;
     }
+    .form-contenedor .form .form-date{
+        display: block;
+        width: 100%;
+    }    
+    .form-contenedor .form .form-input-pasajeros{
+        width: 100%;
+    }
+    .form-contenedor{
+        width: 90%;
+        margin-top: 10px;
+    
+    }
+
 }
 
 /*De 0 a 400px*/
@@ -330,5 +410,12 @@ a{
     }
     .cards{
         flex-direction: column;
+    }
+    .form-contenedor .form .form-date{
+        display: block;
+        width: 100%;
+    }    
+    .form-contenedor .form .form-input-pasajeros{
+        width: 100%;
     }
 }

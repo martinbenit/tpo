@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajá por nuestro País</title>
+    <!--<link rel="stylesheet" href="css/fontawesome.min.css">-->
+    <link href="css/uicons-brands.css" rel="stylesheet">
+    <link href="css/uicons-solid-rounded.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700;900&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="padre">
+        <header class="header">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html">InterTour</a>
+                </div>
+                <div class="nav">
+                    <a href="#"><i class="fi fi-sr-home"></i>Home</a>
+                    <a href="destinos.html"><i class="fi fi-sr-rocket-lunch"></i>Destinos</a>
+                    <a href="#"><i class="fi fi-sr-users-alt"></i>Salidas Grupales</a>
+                    <a href="consultas.html"><i class="fi fi-sr-megaphone"></i>Consultas</a>
+                </div>
+                <div class="social">
+                    <div><a href=""><i class="fi fi-brands-instagram"></i></a></div>
+                </div>
+            </div>
+            <div class="texto-principal">
+                <h1>“Ver si ponemos otro texto”</h1>
+            </div>
+        </header>
+        <section class="section">
+            <div class="form-contenedor">
+                <form action="#" class="form">
+                    <div class="form-header">
+                        <h1 class="form-title">Cóntactenos para pedir presupuesto</h1>
+                    </div>
+                    <div class="form-item">
+                        <label for="nom" class="form-label">Nombre:</label>
+                        <input type="text" name="Nombre" id="nom" class="form-input">
+                    </div>
+                    <div class="form-item">
+                        <label for="ape" class="form-label">Apellido:</label>
+                        <input type="text" name="Apellido" id="ape" class="form-input">
+                    </div>
+                    <div class="form-item">
+                        <label for="mail" class="form-label">Email:</label>
+                        <input type="email" name="Email" id="mail" class="form-input">
+                    </div>
+                   <div class="form-item">
+                        <label for="tel" class="form-label">Teléfono / Celular:</label>
+                        <input type="number" name="Telefono" id="tel" class="form-input" placeholder="Código de área (sin el 0) + número de teléfono">
+                   </div>
+                    <div class="form-item">
+                        <label for="destino" class="form-label">Destino:</label>
+                        <select name="destino" id="destino" class="form-input" style="display: block;">
+                            <option value="1"></option>
+                            <option value="1">Cataratas del Iguazú</option>
+                            <option value="2">Cataratas del Iguazú</option>
+                            <option value="3">Cataratas del Iguazú</option>
+                            <option value="4">Cataratas del Iguazú</option>
+                        </select>
+                    </div>
+                   <div class="form-item">
+                        <label for="salida" class="form-label-date">Fecha de salida:</label>
+                        <input type="date" name="Fecha de salida" id="salida" class="form-date">
+                        <label for="llegada" class="form-label-date">Fecha de llegada:</label>
+                        <input type="date" name="Fecha de llegada" id="llegada" class="form-date">
+                   </div>
+                    <div class="form-item">
+                        <label for="pasajeros" class="form-label">Cantidad de pasajeros:</label>
+                        <input type="number" name="Cantidad de pasajeros" id="pasajeros" min="1" class="form-input-pasajeros">
+                    </div>
+                    <div class="form-item">
+                        <label for="Comentarios" class="form-label">Comentarios</label>
+                        <textarea name="Consulta" id="consulta" class="form-textarea" cols="60" rows="10" placeholder="Escriba aquí su consulta aquí"></textarea>
+                    </div>
+                    <div>
+                        <button type="reset">Borrar datos</button>
+                        <button type="submit">Enviar datos</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
