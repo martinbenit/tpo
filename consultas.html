@@ -34,60 +34,75 @@
                 <h1>“Ver si ponemos otro texto”</h1>
             </div>
         </header>
+        <!-- ######################### FORMULARIO ########################### -->
         <section class="section">
             <div class="form-contenedor">
-                <form action="#" class="form">
+                <form action="#" class="form" id="formulario" novalidate>
                     <div class="form-header">
                         <h1 class="form-title">Cóntactenos para pedir presupuesto</h1>
                     </div>
-                    <div class="form-item">
-                        <label for="nom" class="form-label">Nombre:</label>
+                    <div class="form-item">  <!-- ############# Nombre ############### -->
+                        <label for="nom" class="form-label">Nombre *:</label>
                         <input type="text" name="Nombre" id="nom" class="form-input">
+                        <span id="nombre-error" class="error" style="color:red; display: none;">Nombre inválido. Use letras y/o espacios.</span>
+                        <span id="nombre-vacio" class="error" style="color:red; display: none;">El nombre no puede quedar vacío.</span>
                     </div>
-                    <div class="form-item">
-                        <label for="ape" class="form-label">Apellido:</label>
+                    <div class="form-item"> <!-- ############# Apellido ############### -->
+                        <label for="ape" class="form-label">Apellido *:</label>
                         <input type="text" name="Apellido" id="ape" class="form-input">
+                        <span id="apellido-error" class="error" style="color:red; display: none;">Apellido inválido. Use letras y/o espacios.</span>
+                        <span id="apellido-vacio" class="error" style="color:red; display: none;">El apellido no puede quedar vacío.</span>
                     </div>
-                    <div class="form-item">
-                        <label for="mail" class="form-label">Email:</label>
-                        <input type="email" name="Email" id="mail" class="form-input">
+                    <div class="form-item"> <!-- ############# Email ############### -->
+                        <label for="email" class="form-label">Email *:</label>
+                        <input type="email" name="Email" id="email" class="form-input">
+                        <span id="email-error" class="error" style="color:red; display: none;">Ingrese un email válido. Recuerde que debe contener el símbolo @.</span>
+                        <span id="email-vacio" class="error" style="color:red; display: none;">El email no puede quedar vacío.</span>
                     </div>
-                   <div class="form-item">
+                   <div class="form-item"> <!-- ############# Teléfono ############### -->
                         <label for="tel" class="form-label">Teléfono / Celular:</label>
-                        <input type="number" name="Telefono" id="tel" class="form-input" placeholder="Código de área (sin el 0) + número de teléfono">
+                        <input type="number" name="Telefono" id="tel" class="form-input" placeholder="Código de área (sin el 0) + número de teléfono sin guiones">
+                        <span id="tel-error" class="error" style="color:red; display: none;">Número de teléfono inválido. Mínimo 7 y máximo 14 caracteres, sin guiones.</span>
                    </div>
-                    <div class="form-item">
-                        <label for="destino" class="form-label">Destino:</label>
+                    <div class="form-item"> <!-- ############# Destino ############### -->
+                        <label for="destino" class="form-label">Destino: *</label>
                         <select name="destino" id="destino" class="form-input" style="display: block;">
-                            <option value="1"></option>
+                            <option value="default" disabled selected>-- Selecciona una opción --</option>
                             <option value="1">Cataratas del Iguazú</option>
                             <option value="2">Cataratas del Iguazú</option>
                             <option value="3">Cataratas del Iguazú</option>
                             <option value="4">Cataratas del Iguazú</option>
                         </select>
+                        <span id="destino-vacio" class="error" style="color:red; display: none;">Debe seleccionar un destino.</span>
                     </div>
-                   <div class="form-item">
-                        <label for="salida" class="form-label-date">Fecha de salida:</label>
+                   <div class="form-item"> <!-- ############# Fecha de salida ############### -->
+                        <label for="salida" class="form-label-date">Fecha de salida: *</label>
                         <input type="date" name="Fecha de salida" id="salida" class="form-date">
-                        <label for="llegada" class="form-label-date">Fecha de llegada:</label>
+                        <span id="salida-vacio" class="error" style="color:red; display: none;">Debe seleccionar una fecha de salida válida.</span>
+                        <span id="salida-error" style="color: red; display: none;">La fecha de salida debe ser posterior a la fecha actual.</span>
+                        <!-- ############# Fecha de llegada ############### -->
+                        <label for="llegada" class="form-label-date">Fecha de llegada: *</label>
                         <input type="date" name="Fecha de llegada" id="llegada" class="form-date">
+                        <span id="llegada-vacio" class="error" style="color:red; display: none;">Debe seleccionar una fecha de llegada válida.</span>
+                        <span id="salida-llegada-error" class="error" style="color:red; display: none;">La fecha de llegada debe ser posterior a la fecha de salida.</span>
                    </div>
-                    <div class="form-item">
-                        <label for="pasajeros" class="form-label">Cantidad de pasajeros:</label>
+                    <div class="form-item"> <!-- ############# Cantidad de pasajeros ############### -->
+                        <label for="pasajeros" class="form-label">Cantidad de pasajeros: *</label>
                         <input type="number" name="Cantidad de pasajeros" id="pasajeros" min="1" class="form-input-pasajeros">
+                        <span id="pasajeros-vacio" class="error" style="color:red; display: none;">Debe indicar la cantidad de pasajeros.</span>
                     </div>
-                    <div class="form-item">
-                        <label for="Comentarios" class="form-label">Comentarios</label>
-                        <textarea name="Consulta" id="consulta" class="form-textarea" cols="60" rows="10" placeholder="Escriba aquí su consulta aquí"></textarea>
+                    <div class="form-item"> <!-- ############# Comentarios ############### -->
+                        <label for="comentarios" class="form-label">Comentarios</label>
+                        <textarea name="Consulta" id="comentarios" class="form-textarea" cols="60" rows="10" placeholder="Escriba aquí su consulta aquí"></textarea>
                     </div>
                     <div>
-                        <button type="reset">Borrar datos</button>
+                        <button type="reset" id="boton-reset">Borrar datos</button>
                         <button type="submit">Enviar datos</button>
                     </div>
-
                 </form>
             </div>
         </section>
     </div>
+    <script src="./js/form.js"></script>
 </body>
 </html>
