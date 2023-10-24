@@ -10,7 +10,7 @@ function traerMultiples() {
                     <div class="article">
                         <div class="article-columnas">
                             <div class="datos-opinion">
-                            <img src="${res.results[i].picture.large}" class="img-fluid rounded-circle">
+                            <img src="${res.results[i].picture.large}" alt="imagen del usuario">
                                 <h4> ${res.results[i].name.first} ${res.results[i].name.last}</h4>
                                 <h5> ${res.results[i].location.country}</h5>
                             </div>

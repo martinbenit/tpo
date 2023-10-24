@@ -82,17 +82,19 @@ a{
 
 
         .texto-principal{
-            /*background: orange;*/
+            background: rgb(0, 0, 0, 0.1);
             height: 580px;
             display: flex;
             align-items: top;
+        
         }
             h1 {
                 font-size: 35px;
-                color: #ffffff;
+                color: rgb(255, 255, 255);
                 font-weight:5;
                 text-align: center;
                 line-height: 1.3;
+                font-weight:500;
             }
 
     .section{
@@ -327,9 +329,10 @@ a{
     margin: auto;
 }
 
-.form-contenedor .form .form-title{
+.form-title, .grupales-title{
     color: #454545;
     font-weight: 400;
+    text-align: center;
 }
 .form-contenedor .form .form-label, .form-label-date{
     display: block;
