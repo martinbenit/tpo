@@ -143,3 +143,28 @@ document.getElementById("boton-reset").addEventListener("click", function() {
 	  errorElement.style.display = "none";
 	});
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ######################## PARA LA API DEL CLIMA ################################

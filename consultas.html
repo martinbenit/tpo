@@ -27,7 +27,7 @@
                     <a href="consultas.html"><i class="fi fi-sr-megaphone"></i>Consultas</a>
                 </div>
                 <div class="social">
-                    <div><a href=""><i class="fi fi-brands-instagram"></i></a></div>
+                    <div><a href="#"><i class="fi fi-brands-instagram"></i></a></div>
                 </div>
             </div>
             <div class="texto-principal">
@@ -44,25 +44,25 @@
                     <div class="form-item">  <!-- ############# Nombre ############### -->
                         <label for="nom" class="form-label">Nombre *:</label>
                         <input type="text" name="Nombre" id="nom" class="form-input">
-                        <span id="nombre-error" class="error" style="color:red; display: none;">Nombre inválido. Use letras y/o espacios.</span>
-                        <span id="nombre-vacio" class="error" style="color:red; display: none;">El nombre no puede quedar vacío.</span>
+                        <span id="nombre-error" class="error" style="display: none;">Nombre inválido. Use letras y/o espacios.</span>
+                        <span id="nombre-vacio" class="error" style="display: none;">El nombre no puede quedar vacío.</span>
                     </div>
                     <div class="form-item"> <!-- ############# Apellido ############### -->
                         <label for="ape" class="form-label">Apellido *:</label>
                         <input type="text" name="Apellido" id="ape" class="form-input">
-                        <span id="apellido-error" class="error" style="color:red; display: none;">Apellido inválido. Use letras y/o espacios.</span>
-                        <span id="apellido-vacio" class="error" style="color:red; display: none;">El apellido no puede quedar vacío.</span>
+                        <span id="apellido-error" class="error" style="display: none;">Apellido inválido. Use letras y/o espacios.</span>
+                        <span id="apellido-vacio" class="error" style="display: none;">El apellido no puede quedar vacío.</span>
                     </div>
                     <div class="form-item"> <!-- ############# Email ############### -->
                         <label for="email" class="form-label">Email *:</label>
                         <input type="email" name="Email" id="email" class="form-input">
-                        <span id="email-error" class="error" style="color:red; display: none;">Ingrese un email válido. Recuerde que debe contener el símbolo @.</span>
-                        <span id="email-vacio" class="error" style="color:red; display: none;">El email no puede quedar vacío.</span>
+                        <span id="email-error" class="error" style="display: none;">Ingrese un email válido. Recuerde que debe contener el símbolo @.</span>
+                        <span id="email-vacio" class="error" style="display: none;">El email no puede quedar vacío.</span>
                     </div>
                    <div class="form-item"> <!-- ############# Teléfono ############### -->
                         <label for="tel" class="form-label">Teléfono / Celular:</label>
                         <input type="number" name="Telefono" id="tel" class="form-input" placeholder="Código de área (sin el 0) + número de teléfono sin guiones">
-                        <span id="tel-error" class="error" style="color:red; display: none;">Número de teléfono inválido. Mínimo 7 y máximo 14 caracteres, sin guiones.</span>
+                        <span id="tel-error" class="error" style="display: none;">Número de teléfono inválido. Mínimo 7 y máximo 14 caracteres, sin guiones.</span>
                    </div>
                     <div class="form-item"> <!-- ############# Destino ############### -->
                         <label for="destino" class="form-label">Destino: *</label>
@@ -73,23 +73,23 @@
                             <option value="3">Cataratas del Iguazú</option>
                             <option value="4">Cataratas del Iguazú</option>
                         </select>
-                        <span id="destino-vacio" class="error" style="color:red; display: none;">Debe seleccionar un destino.</span>
+                        <span id="destino-vacio" class="error" style="display: none;">Debe seleccionar un destino.</span>
                     </div>
                    <div class="form-item"> <!-- ############# Fecha de salida ############### -->
                         <label for="salida" class="form-label-date">Fecha de salida: *</label>
                         <input type="date" name="Fecha de salida" id="salida" class="form-date">
-                        <span id="salida-vacio" class="error" style="color:red; display: none;">Debe seleccionar una fecha de salida válida.</span>
-                        <span id="salida-error" style="color: red; display: none;">La fecha de salida debe ser posterior a la fecha actual.</span>
+                        <span id="salida-vacio" class="error" style="display: none;">Debe seleccionar una fecha de salida válida.</span>
+                        <span id="salida-error" style="display: none;">La fecha de salida debe ser posterior a la fecha actual.</span>
                         <!-- ############# Fecha de llegada ############### -->
                         <label for="llegada" class="form-label-date">Fecha de llegada: *</label>
                         <input type="date" name="Fecha de llegada" id="llegada" class="form-date">
-                        <span id="llegada-vacio" class="error" style="color:red; display: none;">Debe seleccionar una fecha de llegada válida.</span>
-                        <span id="salida-llegada-error" class="error" style="color:red; display: none;">La fecha de llegada debe ser posterior a la fecha de salida.</span>
+                        <span id="llegada-vacio" class="error" style="display: none;">Debe seleccionar una fecha de llegada válida.</span>
+                        <span id="salida-llegada-error" class="error" style="display: none;">La fecha de llegada debe ser posterior a la fecha de salida.</span>
                    </div>
                     <div class="form-item"> <!-- ############# Cantidad de pasajeros ############### -->
                         <label for="pasajeros" class="form-label">Cantidad de pasajeros: *</label>
                         <input type="number" name="Cantidad de pasajeros" id="pasajeros" min="1" class="form-input-pasajeros">
-                        <span id="pasajeros-vacio" class="error" style="color:red; display: none;">Debe indicar la cantidad de pasajeros.</span>
+                        <span id="pasajeros-vacio" class="error" style="display: none;">Debe indicar la cantidad de pasajeros.</span>
                     </div>
                     <div class="form-item"> <!-- ############# Comentarios ############### -->
                         <label for="comentarios" class="form-label">Comentarios</label>
@@ -102,6 +102,15 @@
                 </form>
             </div>
         </section>
+        <h1 class="iframe-title">Nuestras oficinas</h1>
+        <div class="mapa-contenedor">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37164.42313483676!2d-58.40592947531072!3d-34.58134738445033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca83bebe54bb%3A0x1ef9d769e184f2d5!2sSecretar%C3%ADa%20de%20Tur%C3%ADsmo%20de%20la%20Naci%C3%B3n!5e0!3m2!1ses-419!2sar!4v1697955226633!5m2!1ses-419!2sar" width="80%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe-google" title="Nuestas oficinas"></iframe>
+        </div>
+        <footer class="footer">
+            <nav class="pie">
+                <h6>Av. Sta. Fe 873 - CABA</h6>
+            </nav>
+        </footer>
     </div>
     <script src="./js/form.js"></script>
 </body>

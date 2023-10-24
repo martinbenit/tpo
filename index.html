@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700;900&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="\img\avion.png" type="image/png">
     <link rel="stylesheet" href="estilos.css">
-
-<body>
+</head>
+<body onload="traerMultiples()">
     <div class="padre">
         <header class="header">
             <div class="menu">
@@ -27,7 +27,7 @@
                     <a href="consultas.html"><i class="fi fi-sr-megaphone"></i>Consultas</a>
                 </div>
                 <div class="social">
-                    <div><a href=""><i class="fi fi-brands-instagram"></i></a></div>
+                    <div><a href="#"><i class="fi fi-brands-instagram"></i></a></div>
                 </div>
             </div>
             <div class="texto-principal">
@@ -36,7 +36,10 @@
         </header>
         <section class="section">
             <div class="articulos">
-                <article class="article">
+                <div class="article" id="opiniones">
+
+                </div>
+                <!-- <article class="article">
                     <img src="img/pexels-heitor-verdi-2343687.jpg" alt="">
                     <h3>25 de Septiembre 2023</h3>
                     <h2>Mi experiencia por..</h2>
@@ -59,14 +62,14 @@
                     <h3>25 de Septiembre 2023</h3>
                     <h2>Mi experiencia por..</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi repellat ex, fugit assumenda veniam ab quia eaque adipisci odio doloremque?</p>
-                </article>
+                </article> -->
                 <nav class="navegacion">
                     <a href="">Inicio</a>
                     <a href="">1</a>
                     <a href="">2</a>
                     <a href="">3</a>
                     <a href="">4</a>
-                    <a href="">Último</a>    
+                    <a href="">Último</a>
                 </nav>
             </div>
             <aside class="aside">
@@ -79,9 +82,12 @@
             </aside>
         </section>
         <footer class="footer">
-            <nav class="pie"></nav>
+            <nav class="pie">
+                <h6>Av. Sta. Fe 873 - CABA</h6>
+            </nav>
         </footer>
     </div>
+    <script src="./js/api.js"></script>
 </body>
 
 </html>
