@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajá por nuestro País</title>
+    <!--<link rel="stylesheet" href="css/fontawesome.min.css">-->
+    <link href="css/uicons-brands.css" rel="stylesheet">
+    <link href="css/uicons-solid-rounded.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700;900&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="padre">
+        <header class="headerConsultas">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html">InterTour</a>
+                </div>
+                <div class="nav">
+                    <a href="index.html"><i class="fi fi-sr-home"></i>Home</a>
+                    <a href="destinos.html"><i class="fi fi-sr-rocket-lunch"></i>Destinos</a>
+                    <a href="salidas_grupales.html"><i class="fi fi-sr-users-alt"></i>Salidas Grupales</a>
+                    <a href="consultas.html"><i class="fi fi-sr-megaphone"></i>Consultas</a>
+                </div>
+                <div class="social">
+                    <div><a href="#"><i class="fi fi-brands-instagram"></i></a></div>
+                </div>
+            </div>
+            <div class="texto-principal">
+                <h1>“Vivir es un viaje, pero viajar es vivir dos veces”</h1>
+            </div>
+        </header>
+        <!-- ######################### FORMULARIO ########################### -->
+        <section class="section">
+            <div class="form-contenedor">
+                <form action="#" class="form" id="formulario" novalidate>
+                    <div class="form-header">
+                        <h1 class="form-title">Cóntactenos para pedir presupuesto</h1>
+                    </div>
+                    <div class="form-item">  <!-- ############# Nombre ############### -->
+                        <label for="nom" class="form-label">Nombre *:</label>
+                        <input type="text" name="Nombre" id="nom" class="form-input">
+                        <span id="nombre-error" class="error" style="display: none;">Nombre inválido. Use letras y/o espacios.</span>
+                        <span id="nombre-vacio" class="error" style="display: none;">El nombre no puede quedar vacío.</span>
+                    </div>
+                    <div class="form-item"> <!-- ############# Apellido ############### -->
+                        <label for="ape" class="form-label">Apellido *:</label>
+                        <input type="text" name="Apellido" id="ape" class="form-input">
+                        <span id="apellido-error" class="error" style="display: none;">Apellido inválido. Use letras y/o espacios.</span>
+                        <span id="apellido-vacio" class="error" style="display: none;">El apellido no puede quedar vacío.</span>
+                    </div>
+                    <div class="form-item"> <!-- ############# Email ############### -->
+                        <label for="email" class="form-label">Email *:</label>
+                        <input type="email" name="Email" id="email" class="form-input">
+                        <span id="email-error" class="error" style="display: none;">Ingrese un email válido. Recuerde que debe contener el símbolo @.</span>
+                        <span id="email-vacio" class="error" style="display: none;">El email no puede quedar vacío.</span>
+                    </div>
+                   <div class="form-item"> <!-- ############# Teléfono ############### -->
+                        <label for="tel" class="form-label">Teléfono / Celular:</label>
+                        <input type="number" name="Telefono" id="tel" class="form-input" placeholder="Código de área (sin el 0) + número de teléfono sin guiones">
+                        <span id="tel-error" class="error" style="display: none;">Número de teléfono inválido. Mínimo 7 y máximo 14 caracteres, sin guiones.</span>
+                   </div>
+                    <div class="form-item"> <!-- ############# Destino ############### -->
+                        <label for="destino" class="form-label">Destino: *</label>
+                        <select name="destino" id="destino" class="form-input" style="display: block;">
+                            <option value="default" disabled selected>-- Selecciona una opción --</option>
+                            <option value="1">Cataratas del Iguazú</option>
+                            <option value="2">Cataratas del Iguazú</option>
+                            <option value="3">Cataratas del Iguazú</option>
+                            <option value="4">Cataratas del Iguazú</option>
+                        </select>
+                        <span id="destino-vacio" class="error" style="display: none;">Debe seleccionar un destino.</span>
+                    </div>
+                   <div class="form-item"> <!-- ############# Fecha de salida ############### -->
+                        <label for="salida" class="form-label-date">Fecha de salida: *</label>
+                        <input type="date" name="Fecha de salida" id="salida" class="form-date">
+                        <span id="salida-vacio" class="error" style="display: none;">Debe seleccionar una fecha de salida válida.</span>
+                        <span id="salida-error" style="display: none;">La fecha de salida debe ser posterior a la fecha actual.</span>
+                        <!-- ############# Fecha de llegada ############### -->
+                        <label for="llegada" class="form-label-date">Fecha de llegada: *</label>
+                        <input type="date" name="Fecha de llegada" id="llegada" class="form-date">
+                        <span id="llegada-vacio" class="error" style="display: none;">Debe seleccionar una fecha de llegada válida.</span>
+                        <span id="salida-llegada-error" class="error" style="display: none;">La fecha de llegada debe ser posterior a la fecha de salida.</span>
+                   </div>
+                    <div class="form-item"> <!-- ############# Cantidad de pasajeros ############### -->
+                        <label for="pasajeros" class="form-label">Cantidad de pasajeros: *</label>
+                        <input type="number" name="Cantidad de pasajeros" id="pasajeros" min="1" class="form-input-pasajeros">
+                        <span id="pasajeros-vacio" class="error" style="display: none;">Debe indicar la cantidad de pasajeros.</span>
+                    </div>
+                    <div class="form-item"> <!-- ############# Comentarios ############### -->
+                        <label for="comentarios" class="form-label">Comentarios</label>
+                        <textarea name="Consulta" id="comentarios" class="form-textarea" cols="60" rows="10" placeholder="Escriba aquí su consulta aquí"></textarea>
+                    </div>
+                    <div>
+                        <button type="reset" id="boton-reset">Borrar datos</button>
+                        <button type="submit">Enviar datos</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <h1 class="iframe-title">Nuestras oficinas</h1>
+        <div class="mapa-contenedor">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37164.42313483676!2d-58.40592947531072!3d-34.58134738445033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca83bebe54bb%3A0x1ef9d769e184f2d5!2sSecretar%C3%ADa%20de%20Tur%C3%ADsmo%20de%20la%20Naci%C3%B3n!5e0!3m2!1ses-419!2sar!4v1697955226633!5m2!1ses-419!2sar" width="80%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe-google" title="Nuestas oficinas"></iframe>
+        </div>
+        <footer class="footer">
+            <nav class="pie">
+                <ul class="lista">
+                    <li>
+                        <h3>E-mail</h3>
+                        <a href="mailto:intertour@intertour.com" style="color: black;">intertour@intertour.com</a>
+                    </li>
+                    <li>
+                        <h3>Nos encontramos en:</h3>
+                        <span>Av. Sta. Fe 873 - CABA, Argentina</span>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    <p>&copy; INTERTOUR. Todos los derechos reservados.</p>
+                    <p>Diseño TPO // Codo a Codo: <a href="#" style="color:brown">rociogc02 and martinbenit</a>.</p>
+                </div>
+            </nav>
+        </footer>
+    </div>
+    <script src="./js/form.js"></script>
+</body>
+</html>
