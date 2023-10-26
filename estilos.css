@@ -21,6 +21,7 @@ a{
     /*background: rgb(242, 217, 141, 0.8); fondo al 24/10/2023*/
     background: white;
     box-shadow: 3px 3px 5px #454545;
+    /* background-color: red; */
 }
     .header {
         background: url(img/TILCARA.jpg);
@@ -33,7 +34,7 @@ a{
     }
 
     .headerDestinos {
-        background: url(img/09.jpg);
+        background: url(img/fondo-destinos.jpg);
         background-position: center;
         background-size: cover;
         display: flex;
@@ -43,7 +44,7 @@ a{
     }
 
     .headerSalidasGrupales {
-        background: url(img/05.jpg);
+        background: url(img/fondo-salidas-grupales.jpg);
         background-position: center;
         background-size: cover;
         display: flex;
@@ -53,7 +54,7 @@ a{
     }
 
     .headerConsultas {
-        background: url(img/07.jpg);
+        background: url(img/fondo-consultas.jpg);
         background-position: center;
         background-size: cover;
         display: flex;
@@ -130,38 +131,20 @@ a{
             }
 
     .section{
-        /*background:#F2C744;*/
-        /*background: rgb(242, 217, 141, 0.8); fondo al 24/10/2023*/
-        background: white;
+        background-color: beige;
         display: flex;
 
     }
 
     /*################################# ESTILOS PARA EL MENU HAMBURGUESA ###############################*/
 
-    .menu{
-        place-content: flex-start;
-    }
-    
-    .header .menu .nav{
-        width: 70%;
-        display: flex;
-        place-content: space-between;
-    }
-
     #menu, #menu-check{
         display: none;
     }
 
-
-
-
-    
     /*################################# ESTILOS PARA PAGINA DE OPINIONES ###############################*/
         .articulos{
-            /* background:#F2C744; */
-            /*background: rgb(242, 217, 141, 0.8); fondo al 24/10/2023*/
-            background: white;
+            background-color: beige;
             flex: 1 1 auto;
             display: flex;
             flex-flow: row wrap;
@@ -175,9 +158,7 @@ a{
                 font-size: 16px;
                 letter-spacing: 1px;
                 margin: 15px 5px 15px 5px;
-                /* background:#F2762E; */
-                /*background: rgb(242, 118, 46, 0.6); fondo al 24/10/2023*/
-                background: white;
+                 background-color: beige;
                 flex: 1 1 40%;
                 border-radius: 15px;
                 box-shadow: 3px 3px 5px #454545;
@@ -201,8 +182,7 @@ a{
             }
 
             .articulosGrupales {
-                /*background:#F2C744; fondo al 24/10/2023*/
-                background: white;
+                background: beige;
                 flex: 2 1 auto;
                 display: flex;
                 flex-flow: row wrap;
@@ -237,20 +217,20 @@ a{
                 color: white;
             }
 
+            .grupales-titulo{
+                background-color: beige;
+            }
 
         .aside{
-            /* background: #F2762E; */
-            /*background: rgb(242, 118, 46, 0.6); fondo al 24/10/2023*/
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            background: white;
+            background-color: beige;
             flex: 1 1 auto;         
         }
             .publicidad{
-                /*background:lightseagreen; fondo al 24/10/2023*/
-                background: white;                
+                background: beige;                
                 width: 100%;                  
             }
             .publicidad h2{
@@ -261,6 +241,37 @@ a{
         .section{
             background-color: beige;
         }
+
+.grupales-titulo1{
+    background-color: lightsalmon;
+}
+
+.iconos-grupales{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas de igual tamaño */
+    gap: 10px; /* Espacio entre las columnas */
+    background-color: lightsalmon;
+    padding: 20px;
+}
+#mapa, #gente, #hospedaje, #viaje{
+    font-size: 4em;
+    border-radius: 90%;
+    
+}
+.mejores-destinos, .gente-nueva, .ahorro-hospedaje, .disfruta-viaje{
+    text-align: center;   
+}
+
+.texto-grupal h3{    
+    color: rgb(11, 126, 126);
+    letter-spacing: 0.05em;
+    font-weight:450;
+    
+}
+
+
+
+
 /*################################# ESTILOS PARA PAGINA DE DESTINOS ###############################*/
 
         .cards{
@@ -279,7 +290,7 @@ a{
             width: 100%;
             height: auto;
             justify-content: center;
-            padding: 0px;
+            padding: 3px;
             margin: 5px;
 
              }
@@ -293,33 +304,25 @@ a{
                 transition: 0.5s;
               }
               .card .frente{
-
-                /*position: relative;
-                width: auto;
-                height: auto;
-                backface-visibility: hidden;
-                text-align: center;
-                transform-style: preserve-3d;*/
                 width: 100%;
                 height: 100%;
                 transform: perspective(600px) rotateY(0deg);
                 background: #F2C744;
                 border-radius: 15px;
+                text-align: justify;
+                
               }
               .card .frente img{
                 width: 100%
               }
-
+              .card .frente h1{
+                padding-top: 20px;
+                font-size: 30px;
+              }
               .card:hover .frente{
                 transform: perspective(600px) rotateY(180deg);
               }
               .card .atras {
-
-                /*display: flex;
-                flex-direction: column;*/
-                /*backface-visibility: hidden;
-                flex-grow: 1;
-                flex-shrink: 1;*/
                 position:absolute;
                 width: 100%;
                 height: 100%;
@@ -330,6 +333,9 @@ a{
                 background-color: #f2d98d;
                 border-radius: 15px;
                 color: black;
+                padding: 30px;
+                text-align: justify;
+                margin-right: 10px;
               }
 
               .card:hover .atras{
@@ -348,59 +354,6 @@ a{
               .card_pie button{
                 font-size: 15px;
               }
-
-             /*.card .frente{
-                flex-grow: 1;
-                flex-shrink: 1;
-                position: relative;
-                width: auto;
-                height: auto;
-                backface-visibility: hidden;
-                text-align: center;
-                transition: 0.5s;
-                transform-style: preserve-3d;
-                transform: perspective(600px) rotateY(0deg);
-             }
-             .card .atras {
-                display: flex;
-                flex-direction: column;
-                transform: perspective(600px) rotateY(180deg);
-                background-color: #e5d8b4;
-                color: black;
-                backface-visibility: hidden;
-                flex-grow: 1;
-                flex-shrink: 1;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                backface-visibility: hidden;
-                transition: 0.5s;
-                transform-style: preserve-3d;
-                overflow-y: auto;
-              }
-              .card .atras p{
-                padding: 15px;
-                font-size: 15px;
-                text-align: center;
-              }
-
-              .card .atras h1{
-                padding-top: 20px;
-              }
-
-              .card .atras h1,h4{
-                text-align: center;
-              }
-
-              .card:hover .frente{
-                transform: perspective(1000px) rotateY(180deg);
-              }
-              .card:hover .atras{
-                transform: perspective(1000px) rotateY(360deg);
-              }
-
-          */
-
 
     .footer {
         /* background: #BF533B; */
@@ -421,7 +374,6 @@ a{
      .lista a{
         color: black;
      }
-
 
      .copyright {
         color: brown;
@@ -447,11 +399,13 @@ a{
     margin: auto;
 }
 
-.form-title, .grupales-title, .opiniones-title{
+.form-title, .grupales-title, .opiniones-title, .texto-grupal h2{
     color: #454545;
     font-weight: 400;
-    text-align: center;
+    text-align: center;    
 }
+
+
 .form-contenedor .form .form-label, .form-label-date{
     display: block;
     color: #454545;
@@ -488,7 +442,6 @@ a{
 }
 
 .mapa-contenedor {
-    /*background: rgb(242, 217, 141, 0.8); fondo al 24/10/2023*/
     background: lightsalmon;
     display: flex;
     text-align: center;
@@ -501,7 +454,6 @@ a{
 .iframe-title{
     color: #454545;
     font-weight: 400;
-    /*background: rgb(242, 217, 141, 0.8); fondo al 24/10/2023*/
     background: lightsalmon;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -578,6 +530,7 @@ a{
 
     .cards{
         flex-direction: column;
+        width: 100%;
     }
     .form-contenedor .form .form-date{
         display: block;
@@ -591,7 +544,18 @@ a{
         margin-top: 10px;
     }
 
-     /*La barra de navegación se transforma en menú hamburguesa*/
+    .iconos-grupales{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-grupal{
+        font-size: 80%;
+    }
+
+
+
+    /*La barra de navegación se transforma en menú hamburguesa*/
 
     .menu {
         display: flex;
@@ -646,19 +610,3 @@ a{
    
 }
 
-/*De 0 a 400px*/
-/* @media all and (max-width: 400px){
-    .aside{
-        flex-direction: column;
-    }
-    .cards{
-        flex-direction: column;
-    }
-    .form-contenedor .form .form-date{
-        display: block;
-        width: 100%;
-    }
-    .form-contenedor .form .form-input-pasajeros{
-        width: 100%;
-    }
-} */

@@ -8,7 +8,6 @@ function traerMultiples() {
             for (let i = 0; i < res.results.length; i++) {
                 articleHTML += `
                     <div class="article">
-                        
                         <div class="article-columnas">
                             <div class="datos-opinion">
                             <img src="${res.results[i].picture.large}" alt="imagen del usuario">
