@@ -11,17 +11,12 @@ a{
     text-decoration: none;
 }
 
-
 .padre{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    /*flex-flow: column nowrap;*/
-    /* background: #F2C744; */
-    /*background: rgb(242, 217, 141, 0.8); fondo al 24/10/2023*/
     background: white;
     box-shadow: 3px 3px 5px #454545;
-    /* background-color: red; */
 }
     .header {
         background: url(img/TILCARA.jpg);
@@ -30,7 +25,6 @@ a{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        /*flex-flow: column nowrap;*/
     }
 
     .headerDestinos {
@@ -40,7 +34,6 @@ a{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        /*flex-flow: column nowrap;*/
     }
 
     .headerSalidasGrupales {
@@ -50,7 +43,6 @@ a{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        /*flex-flow: column nowrap;*/
     }
 
     .headerConsultas {
@@ -60,7 +52,6 @@ a{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        /*flex-flow: column nowrap;*/
     }
 
         .menu{
@@ -68,12 +59,10 @@ a{
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            /*flex-flow: column nowrap;*/
             height: 60px;
             align-items: center;
         }
             .logo{
-
                 flex: 1 1 auto;
             }
             .logo a{
@@ -142,7 +131,7 @@ a{
         display: none;
     }
 
-    /*################################# ESTILOS PARA PAGINA DE OPINIONES ###############################*/
+    /*################################# ESTILOS PARA LA PÁGINA NUESTROS CLIENTES ###############################*/
         .articulos{
             background-color: beige;
             flex: 1 1 auto;
@@ -181,6 +170,7 @@ a{
                 align-items: center;
             }
 
+            /*################################# ESTILOS PARA LA PÁGINA SALIDAS GRUPALES ###############################*/
             .articulosGrupales {
                 background: beige;
                 flex: 2 1 auto;
@@ -248,8 +238,8 @@ a{
 
 .iconos-grupales{
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas de igual tamaño */
-    gap: 10px; /* Espacio entre las columnas */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     background-color: lightsalmon;
     padding: 20px;
 }
@@ -270,9 +260,7 @@ a{
 }
 
 
-
-
-/*################################# ESTILOS PARA PAGINA DE DESTINOS ###############################*/
+/*################################# ESTILOS PARA PAGINA DE DESTINOS (INDEX) ###############################*/
 
         .cards{
             background: #F2C744;
@@ -356,7 +344,6 @@ a{
               }
 
     .footer {
-        /* background: #BF533B; */
         background: lightsalmon;
         display: flex;
         justify-content: center;
@@ -467,12 +454,11 @@ a{
     .section{
         flex-direction: column;
     }
-/*Los elementos del menu deben mostrarse uno debajo del otro*/
     .menu{
         flex-direction: column;
         height: auto;
     }
-/*Los elementos del aside se deben mostrar uno al lado del otro*/
+
     .aside{
         display: flex;
         justify-content: center;
@@ -485,7 +471,7 @@ a{
     .articulos{
         width: 100%;
     }
-/*Los elementos de cards se deben mostrar uno al lado del otro*/
+
     .cards{
         display: flex;
         justify-content: center;
@@ -553,10 +539,7 @@ a{
         font-size: 80%;
     }
 
-
-
     /*La barra de navegación se transforma en menú hamburguesa*/
-
     .menu {
         display: flex;
         place-content: space-between;
