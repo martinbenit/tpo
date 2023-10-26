@@ -8,6 +8,7 @@ function traerMultiples() {
             for (let i = 0; i < res.results.length; i++) {
                 articleHTML += `
                     <div class="article">
+                        
                         <div class="article-columnas">
                             <div class="datos-opinion">
                             <img src="${res.results[i].picture.large}" alt="imagen del usuario">
@@ -15,7 +16,7 @@ function traerMultiples() {
                                 <h5> ${res.results[i].location.country}</h5>
                             </div>
                             <div class="texto-opinion">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam aliquid minus alias quis temporibus. Reprehenderit, nulla officiis odit quod asperiores sit corporis inventore, nemo ad amet, natus alias impedit aperiam accusamus! Natus molestiae voluptatem laudantium? Ut rem facere saepe enim ipsa quasi, quis, reprehenderit excepturi in atque perferendis dolorem adipisci!</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui ad pariatur vel aperiam cumque? Placeat quos porro laudantium temporibus hic assumenda dolorum atque numquam natus ullam, dignissimos voluptatum doloribus quaerat optio iste in!</p>
                             </div>
                         </div>
                     </div>

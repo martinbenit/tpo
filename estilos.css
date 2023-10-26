@@ -117,16 +117,16 @@ a{
             background: rgb(0, 0, 0, 0.1);
             height: 580px;
             display: flex;
-            align-items: top;
+            align-items:top;           
         
         }
             h1 {
                 font-size: 35px;
-                color: rgb(255, 255, 255);
-                font-weight:5;
+                color: rgb(255, 255, 255);                
                 text-align: center;
                 line-height: 1.3;
                 font-weight:500;
+                
             }
 
     .section{
@@ -136,31 +136,59 @@ a{
         display: flex;
 
     }
+
+    /*################################# ESTILOS PARA EL MENU HAMBURGUESA ###############################*/
+
+    .menu{
+        place-content: flex-start;
+    }
+    
+    .header .menu .nav{
+        width: 70%;
+        display: flex;
+        place-content: space-between;
+    }
+
+    #menu, #menu-check{
+        display: none;
+    }
+
+
+
+
+    
     /*################################# ESTILOS PARA PAGINA DE OPINIONES ###############################*/
         .articulos{
             /* background:#F2C744; */
             /*background: rgb(242, 217, 141, 0.8); fondo al 24/10/2023*/
             background: white;
-            flex: 2 1 auto;
+            flex: 1 1 auto;
             display: flex;
             flex-flow: row wrap;
-
+            width: 60%;
+            justify-content: center;
+            align-items: center;
+            
         }
             .article{
                 color: rgb(0, 0, 0, 0.8);
                 font-size: 16px;
                 letter-spacing: 1px;
-                margin: 10px 5px 10px 5px;
+                margin: 15px 5px 15px 5px;
                 /* background:#F2762E; */
                 /*background: rgb(242, 118, 46, 0.6); fondo al 24/10/2023*/
                 background: white;
                 flex: 1 1 40%;
                 border-radius: 15px;
                 box-shadow: 3px 3px 5px #454545;
-
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 auto;
+                border: 2px solid rgb(242, 118, 46, 0.6);
+                
             }
             .article img{
-                width: 20%;
+                width: 30%;
                 border-radius: 50%;
             }
 
@@ -213,14 +241,26 @@ a{
         .aside{
             /* background: #F2762E; */
             /*background: rgb(242, 118, 46, 0.6); fondo al 24/10/2023*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
             background: white;
-            flex: 1 1 auto;
-
+            flex: 1 1 auto;         
         }
             .publicidad{
                 /*background:lightseagreen; fondo al 24/10/2023*/
-                background: white;
+                background: white;                
+                width: 100%;                  
             }
+            .publicidad h2{
+                color: rgb(57, 161, 225);
+                padding-bottom: 10px;
+            }
+   
+        .section{
+            background-color: beige;
+        }
 /*################################# ESTILOS PARA PAGINA DE DESTINOS ###############################*/
 
         .cards{
@@ -266,6 +306,10 @@ a{
                 background: #F2C744;
                 border-radius: 15px;
               }
+              .card .frente img{
+                width: 100%
+              }
+
               .card:hover .frente{
                 transform: perspective(600px) rotateY(180deg);
               }
@@ -374,10 +418,16 @@ a{
      .lista{
         list-style: none;
      }
+     .lista a{
+        color: black;
+     }
+
 
      .copyright {
         color: brown;
-
+     }
+     .copyright a{
+        color: brown;
      }
 
 
@@ -397,7 +447,7 @@ a{
     margin: auto;
 }
 
-.form-title, .grupales-title{
+.form-title, .grupales-title, .opiniones-title{
     color: #454545;
     font-weight: 400;
     text-align: center;
@@ -458,7 +508,8 @@ a{
 }
 /*################################# ESTILOS PARA DISEÑO RESPONSIVE ###############################*/
 
-/*De 601 a 800px*/
+/************************** De 601 a 800px ***************************/
+
 @media all and (max-width: 800px){
 /*El aside debe pasar hacia abajo*/
     .section{
@@ -473,8 +524,15 @@ a{
     .aside{
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        
     }
-
+    .publicidad{
+        width: 100%;
+    }
+    .articulos{
+        width: 100%;
+    }
 /*Los elementos de cards se deben mostrar uno al lado del otro*/
     .cards{
         display: flex;
@@ -502,11 +560,22 @@ a{
 
 }
 
-/*De 401 a 600px*/
+/********************* Hasta 600px ***********************/
 @media all and (max-width: 600px){
+
     .articulos{
         flex-direction: column;
+        width: 100%;
     }
+
+    .article-columnas{
+        display: flex;
+        flex-direction: column;
+    }
+    .aside{
+        flex-direction: column;
+    }
+
     .cards{
         flex-direction: column;
     }
@@ -521,15 +590,64 @@ a{
         width: 90%;
         margin-top: 10px;
     }
-    .article-columnas{
-        display: flex;
-        flex-direction: column;
-    }
 
+     /*La barra de navegación se transforma en menú hamburguesa*/
+
+    .menu {
+        display: flex;
+        place-content: space-between;
+    }
+    #menu-check:not(:checked) ~ .nav{
+        display: none;
+    }
+    #menu-check:checked ~ .nav{
+        display: block;
+    }
+    #menu{
+        display: block;
+        font-size: 1.em;
+        color: white;
+        font-weight: bold;
+        border: 1px solid ;
+        border-radius: 0.3em;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        z-index: 9999;
+    }
+    #menu:hover{
+       color: rgb(9, 233, 233);
+    }
+    #menu-cerrar{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+    .menu .nav{
+        position: absolute;
+        top: 8px;
+        right: 6px;
+        height: 30%;
+        background-color: rgba(48, 44, 44, 0.5);
+        padding-top: 0.5em;
+        padding-right: 1.5em;
+        font-size: 1.4em;
+    }
+    .menu .nav a{
+        color: white;
+        background: none;
+        display: block;
+        text-align: center;
+    }
+   
 }
 
 /*De 0 a 400px*/
-@media all and (max-width: 400px){
+/* @media all and (max-width: 400px){
     .aside{
         flex-direction: column;
     }
@@ -543,4 +661,4 @@ a{
     .form-contenedor .form .form-input-pasajeros{
         width: 100%;
     }
-}
+} */
